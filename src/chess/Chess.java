@@ -6,6 +6,7 @@
 package chess;
 import java.awt.*;
 import javax.swing.*;
+import java.io.*;
         
 public class Chess extends javax.swing.JFrame {
 
@@ -22,9 +23,9 @@ public class Chess extends javax.swing.JFrame {
         piecesPanel.setLayout(new GridLayout (8,8,0,0));
         for (int x = 0; x < 8; x++){
             for (int y = 0; y < 8; y++){
-                String position = Integer.toString(x) + ", " + Integer.toString(y);
-                gridboard[x][y] = new JLabel(position); //adds text for debugging
-                gridboard[x][y].setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+//                String position = Integer.toString(x) + ", " + Integer.toString(y);
+                gridboard[x][y] = new JLabel(); //adds text for debugging
+//                gridboard[x][y].setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
                 
                 
                 gridboard[x][y].setPreferredSize(new Dimension(75,75));
@@ -33,6 +34,13 @@ public class Chess extends javax.swing.JFrame {
                 
             }
         }
+        
+        ImageIcon[] icon = new ImageIcon[13];
+        icon[1] = new ImageIcon("src/chess/1.png");
+        
+        
+        
+        gridboard[1][0].setIcon(icon[1]);
     }
 
     /**
