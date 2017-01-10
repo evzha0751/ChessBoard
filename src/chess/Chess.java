@@ -36,11 +36,77 @@ public class Chess extends javax.swing.JFrame {
         }
         
         ImageIcon[] icon = new ImageIcon[13];
+        icon[0] = new ImageIcon("src/chess/0.png");
         icon[1] = new ImageIcon("src/chess/1.png");
+        icon[2] = new ImageIcon("src/chess/2.png");
+        icon[3] = new ImageIcon("src/chess/3.png");
+        icon[4] = new ImageIcon("src/chess/4.png");
+        icon[5] = new ImageIcon("src/chess/5.png");
+        icon[6] = new ImageIcon("src/chess/6.png");
+        icon[7] = new ImageIcon("src/chess/7.png");
+        icon[8] = new ImageIcon("src/chess/8.png");
+        icon[9] = new ImageIcon("src/chess/9.png");
+        icon[10] = new ImageIcon("src/chess/10.png");
+        icon[11] = new ImageIcon("src/chess/11.png");
+        icon[12] = new ImageIcon("src/chess/12.png");
         
+        //white-----------------------------------------------------------------
+        // pawn
+        gridboard[6][0].setIcon(icon[1]);
+        gridboard[6][1].setIcon(icon[1]);
+        gridboard[6][2].setIcon(icon[1]);
+        gridboard[6][3].setIcon(icon[1]);
+        gridboard[6][4].setIcon(icon[1]);
+        gridboard[6][5].setIcon(icon[1]);
+        gridboard[6][6].setIcon(icon[1]);
+        gridboard[6][7].setIcon(icon[1]);
         
+        // rook
+        gridboard[7][0].setIcon(icon[2]);
+        gridboard[7][7].setIcon(icon[2]);
         
-        gridboard[1][0].setIcon(icon[1]);
+        // knight
+        gridboard[7][1].setIcon(icon[3]);
+        gridboard[7][6].setIcon(icon[3]);
+        
+        // bishop
+        gridboard[7][2].setIcon(icon[4]);
+        gridboard[7][5].setIcon(icon[4]);
+        
+        //queen
+        gridboard[7][3].setIcon(icon[5]);
+        
+        //king
+        gridboard[7][4].setIcon(icon[6]);
+        
+        //black-----------------------------------------------------------------
+        // pawn
+        gridboard[1][0].setIcon(icon[7]);
+        gridboard[1][1].setIcon(icon[7]);
+        gridboard[1][2].setIcon(icon[7]);
+        gridboard[1][3].setIcon(icon[7]);
+        gridboard[1][4].setIcon(icon[7]);
+        gridboard[1][5].setIcon(icon[7]);
+        gridboard[1][6].setIcon(icon[7]);
+        gridboard[1][7].setIcon(icon[7]);
+        
+        // rook
+        gridboard[0][0].setIcon(icon[8]);
+        gridboard[0][7].setIcon(icon[8]);
+        
+        // knight
+        gridboard[0][1].setIcon(icon[9]);
+        gridboard[0][6].setIcon(icon[9]);
+        
+        // bishop
+        gridboard[0][2].setIcon(icon[10]);
+        gridboard[0][5].setIcon(icon[10]);
+        
+        //queen
+        gridboard[0][3].setIcon(icon[11]);
+        
+        //king
+        gridboard[0][4].setIcon(icon[12]);
     }
 
     /**
